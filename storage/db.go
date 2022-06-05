@@ -20,7 +20,7 @@ func NewDB(params ...string) *sql.DB {
 	if err := db.Ping(); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("used by database", db.Stats().OpenConnections)
+	// fmt.Println("used by database", db.Stats().OpenConnections)
 	if err != nil {
 		fmt.Println("I am at main ")
 		fmt.Println("not open", err)
